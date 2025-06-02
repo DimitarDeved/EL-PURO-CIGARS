@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EL PURO Cigar House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1e1a17;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f0e0d;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 150px;
+      border: 3px solid #d3a561;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: #fff;
+    }
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #d3a561;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #d3a561;
+      margin-bottom: 20px;
+    }
+    .collection {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .item {
+      background: #2b2623;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(211, 165, 97, 0.5);
+    }
+    .item h3 {
+      margin-bottom: 10px;
+      color: #d3a561;
+    }
+    @media (min-width: 600px) {
+      .collection {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .item {
+        flex: 1 1 45%;
+      }
+    }
+    iframe {
+      border-radius: 10px;
+      margin-top: 20px;
+      border: none;
+    }
+    footer {
+      background: #0f0e0d;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_80FqVEX3fk4WcXxQmkLqsxr63Uy8OxF5Qw&s" alt="EL PURO Logo" />
+  </header>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="collection">
+    <h1>Our Collection</h1>
+    <p>Step into a world of refinement and relaxation. Explore our curated selection of premium cigars and fine spirits, all under one roof.</p>
+
+    <div class="collection">
+      <div class="item">
+        <h3>Montecristo No. 2</h3>
+        <p>A rich and flavorful Cuban cigar with notes of cocoa and spice.</p>
+      </div>
+      <div class="item">
+        <h3>Padron 1964 Anniversary</h3>
+        <p>Handmade Nicaraguan cigar with smooth, creamy flavor and a touch of coffee.</p>
+      </div>
+      <div class="item">
+        <h3>Romeo y Julieta Churchill</h3>
+        <p>Classic Cuban cigar known for its balanced taste and aromatic smoke.</p>
+      </div>
+      <div class="item">
+        <h3>Arturo Fuente Hemingway</h3>
+        <p>Dominican cigar with medium body and hints of cedar and vanilla.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Visit</h2>
+    <p>📍 Кърджали Център, ул. „Отец Паисий“ 35, 6600 Кърджали</p>
+    <p>📞 +359 87 8201091</p>
+    <p>📧 todfdx@gmail.com</p>
+    <p>Open Every Day: 7 AM - 12 AM</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.170598024607!2d25.37030431543859!3d41.6339575792695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69ed2e7ea1e9f%3A0x6bb8fdf6a9673742!2s%C3%9A%D0%BB.%20%D0%9E%D1%82%D0%B5%D1%86%20%D0%9F%D0%B0%D0%B8%D1%81%D0%B8%D0%B9%2035%2C%206600%20%D0%9A%D1%8A%D1%80%D0%B4%D0%B6%D0%B0%D0%BB%D0%B8!5e0!3m2!1sen!2sbg!4v1684000000000!5m2!1sen!2sbg"
+      width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 EL PURO Cigar House. All rights reserved.</p>
+  </footer>
+</body>
+</html>
